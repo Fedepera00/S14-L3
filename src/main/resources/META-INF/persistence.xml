@@ -1,0 +1,16 @@
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence" version="2.1">
+    <persistence-unit name="JPA_Relationships_Project">
+        <class>it.epicode.esercizi.Persona</class>
+        <class>it.epicode.esercizi.Partecipazione</class>
+        <class>it.epicode.esercizi.Location</class>
+        <class>it.epicode.esercizi.Evento</class>
+        <properties>
+            <property name="jakarta.persistence.jdbc.url" value="jdbc:postgresql://localhost:5433/jpa_relationships"/>
+            <property name="jakarta.persistence.jdbc.user" value="postgres"/>
+            <property name="jakarta.persistence.jdbc.password" value="Fede1608"/>
+            <property name="jakarta.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+            <property name="hibernate.dialect" value="org.hibernate.dialect.PostgreSQLDialect"/>
+            <property name="hibernate.hbm2ddl.auto" value="update"/>
+        </properties>
+    </persistence-unit>
+</persistence>
